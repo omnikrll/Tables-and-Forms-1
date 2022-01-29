@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tables and Forms</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tables and Forms</h1>
+    </header>
+    <!-- table section -->
+    <section>
+      <h2>Tables</h2>
+      <table>
+        <caption>Top 3 Favorite Things</caption>
+        <tr>
+          <th colspan="3">Top Favorites</th>
+        </tr>
+        <tr>
+          <th>Foods</th>
+          <th>Activities</th>
+          <th>Musicians</th>
+        </tr>
+        <tr>
+          <td>Enchiladas</td>
+          <td rowspan="3">Playing Music</td>
+          <td>Frank Zappa</td>
+        </tr>
+        <tr>
+          <td>Salmon</td>
+          <!-- <td>Video Games</td> -->
+          <td>Laurie Anderson</td>
+        </tr>
+        <tr>
+          <td>Spinach</td>
+          <!-- <td>Biking</td> -->
+          <td>Kate Bush</td>
+        </tr>
+      </table>
+    </section>
+    <!-- form section -->
+    <section>
+      <h2>Forms</h2>
+      <form action="" method="get">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="name">Name:</label><br/>
+          <input type="text" id="name" required placeholder="enter your name"/><br/>
+          <label for="height">Height:</label><br/>
+          <input type="text" id="height" placeholder="enter your height"/><br/>
+          <label for="powers">Powers:</label><br/>
+          <select id="powers">
+            <option value="flight">Flight</option>
+            <option value="laser-vision">Laser Vision</option>
+            <option value="breathe-underwater">Breathe Underwater</option>
+          </select><br/>
+          <label for="pwd">Password:</label><br/>
+          <input type="password" id="pwd"/><br/>
+          <input type="submit" value="Submit"/>
+        </fieldset>
+        <fieldset>
+          <legend>Shipping Address</legend>
+          <label for="add1">Address Line 1</label><br/>
+          <input type="text" id="add1"/><br/>
+          <label for="add2">Address Line 2</label><br/>
+          <input type="text" id="add2"/>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- <section>
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
+    </section> -->
+  </body>
+</html>
